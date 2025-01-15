@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="en">
+  <head>
+      <meta charset="utf-8">    
+      <title>Amaryllis' Portfolio</title>    
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+
+  <body>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Amaryllis is a Developer</h1>
+          <p class="lead text-muted">A collection of my programming and design projects.</p>
+          <p>
+              <a href="https://github.com/amaryllisninja" class="btn btn-primary my-2">GitHub</a>
+              <a href="https://amaryllisart.com" class="btn btn-secondary my-2">Illustrations</a>
+              <a href="https://www.linkedin.com/in/amaryllisart/" class="btn btn-outline-primary my-2">LinkedIn</a>
+          </p>
+          <img src="{% static 'ama.png' %}" height="300" />
+        </div>
+      </section>
+    </main>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.js' %}" ></script>
+    <script src="{% static 'jquery-3.3.1.min.js' %}" ></script>
+  </body>
+</html>    
